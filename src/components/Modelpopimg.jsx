@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
-function Poppning() {
+function Modelpopimg() {
     const navigate = useNavigate()
     const [selected, setSelected] = useState(null)          // เก็บรูปที่ถูกกด
     const [isOpen, setIsOpen] = useState(false)             // เปิด/ปิดกริด
@@ -175,4 +175,5 @@ function Poppning() {
     )
 }
 
-export default Poppning
+
+export default Modelpopimg

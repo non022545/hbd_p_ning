@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import MusicToggle from '../components/MusicToggle'
-import Poppning from '../components/poppning'
+import Modelpopimg from '../components/Modelpopimg'
 
 
 function Home() {
@@ -145,7 +145,7 @@ function Home() {
             )}
           </AnimatePresence>
         </div>
-        {imamgShow && <Poppning />}
+        {imamgShow && <Modelpopimg />}
       </div>
       <MusicToggle ref={musicRef} src="/audio/hbd.mp3" title="Happy Birthday 🎂" initialVolume={0.7} />
     </>
