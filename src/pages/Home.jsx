@@ -144,7 +144,20 @@ function Home() {
             )}
           </AnimatePresence>
         </div>
-        {imamgShow && <Modelpopimg />}
+        <AnimatePresence initial={false} mode="wait">
+          {imamgShow && (
+            <motion.div
+              key="modelpop"
+              initial={{ opacity: 0, y: 8, height: 0 }}
+              animate={{ opacity: 1, y: 0, height: 'auto' }}
+              exit={{ opacity: 0, y: 8, height: 0 }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              className="overflow-hidden"   // สำคัญเพื่อให้ height:0 เนียน
+            >
+              <Modelpopimg />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
       <MusicToggle ref={musicRef} src="/audio/hbd.mp3" title="Happy Birthday 🎂" initialVolume={0.7} />
     </>
