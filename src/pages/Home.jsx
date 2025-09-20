@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import MusicToggle from '../components/MusicToggle'
 import Modelpopimg from '../components/Modelpopimg'
@@ -9,12 +8,12 @@ function Home() {
   const [cardShow, setCardShow] = useState(false)
   const [cardinShow, setCardinShow] = useState(false)
   const [imamgShow, setImamgShow] = useState(false)
-  const navigate = useNavigate()
   const musicRef = useRef(null)
 
 
   const handlecardShow = () => {
     setCardShow(prev => !prev)
+    setImamgShow(false)
     setCardinShow(false)
     musicRef.current?.play()
   }
