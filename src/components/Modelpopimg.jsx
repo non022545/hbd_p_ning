@@ -49,7 +49,7 @@ function Modelpopimg() {
     }
 
     return (
-        <div className="min-h-screen w-full py-4 px-2 bg-gradient-to-br from-purple-400 via-pink-500 to-pink-300 bg-[length:200%_200%] animate-gradient">
+        <div className="min-h-screen w-full py-4 px-2">
             {/* ปุ่มกลับ */}
             {/* <div className="flex justify-end mb-4">
         <button
