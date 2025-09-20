@@ -1,20 +1,28 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import MusicToggle from '../components/MusicToggle'
+import Poppning from '../components/poppning'
 
 function Home() {
   const [cardShow, setCardShow] = useState(false)
   const [cardinShow, setCardinShow] = useState(false)
+  const [imamgShow, setImamgShow] = useState(false)
   const navigate = useNavigate()
+  const musicRef = useRef(null)
+
 
   const handlecardShow = () => {
     setCardShow(prev => !prev)
     setCardinShow(false)
+    musicRef.current?.play()
   }
   const handlecardinShow = () => {
     setCardinShow(prev => !prev)
   }
-  const handleimageShow = () => navigate('/Imagepning')
+  const handleimageShow = () => {
+    setImamgShow(prev => !prev)
+  }
 
   // ใช้ variants เพื่อจัดการอนิเมชันแบบรวม ๆ
   const containerVariants = {
@@ -136,7 +144,9 @@ function Home() {
             )}
           </AnimatePresence>
         </div>
+        {imamgShow && <Poppning />}
       </div>
+      <MusicToggle ref={musicRef} src="/audio/hbd.mp3" title="Happy Birthday 🎂" initialVolume={0.7} />
     </>
   )
 }
