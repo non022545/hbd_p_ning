@@ -32,7 +32,7 @@ function Home() {
                     <div className='flex justify-center'
                         onClick={handlecardShow}>
                         <button className='bg-pink-800/60 text-center mt-4 p-2 w-auto text-white rounded-3xl'>
-                            <p className='text-xl mb-2 font-bold'>&#128073; กดเปิดอ่านตรงนี้นะคะ &#128072;</p>
+                            <p className='text-xl font-bold'>&#128073; กดเปิดอ่านตรงนี้นะคะ &#128072;</p>
 
                         </button>
                     </div>
@@ -48,7 +48,7 @@ function Home() {
                             </div>
                             <div className='flex justify-center'>
                                 <button className='bg-pink-800/60 text-center mt-4 p-2 w-auto text-white rounded-3xl' onClick={handlecardinShow}>
-                                    <p className='text-xl mb-2 font-bold'>&#128150; มีอีกกกกกก &#128150;</p>
+                                    <p className='text-xl font-bold'>&#128150; มีอีกกกกกก &#128150;</p>
                                 </button>
                             </div>
                             {cardinShow && (
@@ -63,7 +63,7 @@ function Home() {
                                     </div>
                                     <div className='flex justify-center'>
                                         <button className='bg-pink-800/60 text-center mt-4 p-2 w-auto text-white rounded-3xl' onClick={handleimageShow}>
-                                            <p className='text-xl mb-2 font-bold'>&#129392; แล้วก็มีอีกกก &#129392;</p>
+                                            <p className='text-xl font-bold'>&#129392; แล้วก็มีอีกกก &#129392;</p>
                                         </button>
                                     </div>
                                 </>
