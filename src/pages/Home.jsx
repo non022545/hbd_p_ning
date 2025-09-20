@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import MusicToggle from '../components/MusicToggle'
 import Poppning from '../components/poppning'
 
+
 function Home() {
   const [cardShow, setCardShow] = useState(false)
   const [cardinShow, setCardinShow] = useState(false)
