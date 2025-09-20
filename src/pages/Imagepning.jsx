@@ -18,6 +18,14 @@ function Imagepning() {
     { id: 4, src: '/images/n4.jpeg', caption: '💖✨🌸✨💖' },
     { id: 5, src: '/images/n5.jpeg', caption: '💖✨🌸✨💖' },
     { id: 6, src: '/images/n6.jpeg', caption: '💖✨🌸✨💖' },
+    { id: 7, src: '/images/n7.jpg', caption: '💖✨🌸✨💖' },
+    { id: 8, src: '/images/n8.jpg', caption: '💖✨🌸✨💖' },
+    { id: 9, src: '/images/n9.jpg', caption: '💖✨🌸✨💖' },
+    { id: 10, src: '/images/n10.jpg', caption: '💖✨🌸✨💖' },
+    { id: 11, src: '/images/n11.jpg', caption: '💖✨🌸✨💖' },
+    { id: 12, src: '/images/n12.jpg', caption: '💖✨🌸✨💖' },
+    { id: 13, src: '/images/n13.jpg', caption: '💖✨🌸✨💖' },
+    { id: 14, src: '/images/n14.jpg', caption: '💖✨🌸✨💖' },
   ]
 
   return (
