@@ -54,6 +54,10 @@ function Home() {
           <div className="bg-white/60 text-center text-xl text-pink-900 p-2 rounded-3xl font-bold">
             &#129392; HAPPY BIRTHDAY &#129392; <br /> &#128150; P'NING &#128150;
           </div>
+          <div className='flex justify-center mt-4 '>
+            <img src="/images/n5.jpeg" alt="Birthday image" className='rounded-3xl shadow-2xl h-auto w-1/4' />
+          </div>
+
 
           <div className="flex justify-center">
             <button
